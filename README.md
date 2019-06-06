@@ -44,7 +44,7 @@ if we have a **ActorManager** class which have a **person** property that need t
 export default class ActorManager implements IActorManager{
 
     @Inject("IPerson")
-    private person:IPerson=null;
+    private person:IPerson=null;//must set a default value
 
     GetPerson(): IPerson {
         return this.person;
